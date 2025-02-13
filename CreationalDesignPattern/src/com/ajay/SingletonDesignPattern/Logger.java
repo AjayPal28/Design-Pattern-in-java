@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 
 public class Logger {
 
-	private static Logger logger = null;
+	private static volatile Logger logger = null;
 
 	private Logger() {
 		super();
